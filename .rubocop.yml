@@ -1,5 +1,7 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 3.0
 
 Style/StringLiterals:
   Enabled: true
@@ -10,4 +12,29 @@ Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
 
 Layout/LineLength:
-  Max: 120
+  Enabled: false
+
+Lint/DuplicateMethods:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassVars:
+  Exclude:
+    - 'lib/xbird/**/*'
+
+Lint/SuppressedException:
+  Exclude:
+    - 'lib/xbird/**/*'
+
+Lint/UnderscorePrefixedVariableName:
+  Exclude:
+    - 'lib/xbird/**/*'
+
+Lint/UselessAssignment:
+  Exclude:
+    - 'lib/xbird/**/*'
+
+Metrics:
+  Enabled: false

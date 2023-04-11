@@ -7,3 +7,4 @@ openapi-generator generate \
  --library=faraday \
  --output ./
 
+rubocop -A

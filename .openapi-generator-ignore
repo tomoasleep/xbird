@@ -28,3 +28,7 @@ Gemfile
 .rspec
 .gitignore
 script/**
+.gitlab-ci.yml
+.travis.yml
+.git_push.sh
+.github/workflows/main.yml
